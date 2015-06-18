@@ -9,7 +9,7 @@ Sample repository for demonstrating Git customizations and third-party tools.
 
 
 ### Class Materials
-[Sample `.gitconfig` file built in class](.gitconfig)
+- [Sample `.gitconfig` file built in class](.gitconfig)
 
 ### A few handy links
 Here are a few links used in this class:
