@@ -1,0 +1,26 @@
+[user]
+	name = GitHub Teacher
+	email = trainingdemos+githubteacher@github.com
+[core]
+	editor = vim
+[push]
+	default = simple
+[alias]
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	unstage = reset HEAD
+	last = log -1 HEAD
+	amend = commit --amend
+	r = reset HEAD
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset --hard HEAD^
+	rh2 = reset --hard HEAD^^
+	publish = !git branch | grep '*' | sed 's/* //' | xargs git push -u origin
+	la = "!git config -l" | grep alias | cut -c 7-
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+[commit]
+	template = /Users/githubteacher/.gitmessage.txt
